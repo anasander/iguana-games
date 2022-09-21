@@ -5,6 +5,10 @@
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
   color: #034ea2;
   font-size: 1rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .header-esq {
@@ -28,8 +32,7 @@
   flex-wrap: wrap;
   gap: 80px;
   border-bottom: solid 2px #ffe661;
-  text-align: center;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .header-search {
@@ -38,16 +41,19 @@
   justify-content: center;
   margin-top: 8px;
   margin-bottom: 8px;
+  padding-left: 20px;
 }
 
 .header-search input {
   width: 350px;
   height: 32px;
-  padding-left: 20px;
+  padding-left: 12px;
   background: #e9ebf5;
   border-radius: 4px 0px 0px 4px;
-  border: none;
+  border: solid 2px #d1d4e9;
+  border-right: none;
   color: #4a4b5c;
+  box-sizing: border-box;
 }
 
 .header-search input:focus {
@@ -56,7 +62,7 @@
 
 .header-search button {
   width: 80px;
-  height: 34px;
+  height: 32px;
   background: linear-gradient(180deg, #ffe661 0%, #ffcb05 100%);
   border-radius: 0px 4px 4px 0px;
   border: none;
@@ -64,10 +70,11 @@
 
 .header-search button:hover {
   cursor: pointer;
+  background: linear-gradient(180deg, #ffcb05 0%, #cc9302 100%);
 }
 
 .header-search button img {
-  padding-top: 3px;
+  padding-top: 2px;
 }
 
 .header-link-int {
@@ -75,6 +82,7 @@
   flex-wrap: wrap;
   gap: 60px;
   margin-top: 13px;
+  padding-right: 20px;
   justify-content: center;
 }
 
