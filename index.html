@@ -21,19 +21,31 @@
                     <input type="text" placeholder="Procurar por jogos, consoles, acessórios...">
                     <button type="submit"><img src="/img/icons/svg/search.svg" alt=""></button>
                 </div>
-                <nav class="header-link-int">
-                    <p class="header-link-int-1"><a href="/">Fale com a gente!</a></p>
-                    <p class="header-link-int-2"><a href="/">Lista de Desejos</a></p>
-                    <p class="header-link-int-3"><a href="/">Carrinho</a></p>
-                    <p class="header-link-int-4"><a href="/">Minha Conta</a></p>
+                <nav id="nav">
+                    <button id="btn-menu" aria-label="Abrir menu" aria-haspopup="true" aria-controls="menu menu2" aria-expanded="false"><span id="hamburguer"></span></button>
+                    <ul id="menu" class="header-link-int" role="menu">
+                        <li class="header-link-int-1"><a href="/">Fale com a gente!</a></li>
+                        <li class="header-link-int-2"><a href="/">Lista de Desejos</a></li>
+                        <li class="header-link-int-3"><a href="/">Carrinho</a></li>
+                        <li class="header-link-int-4"><a href="/">Minha Conta</a></li>
+                    </ul>
+                    <ul id="menu2" class="navhidden" role="menu">
+                        <li><a href="/">Retro</a></li>
+                        <li><a href="/">Nintendo</a></li>
+                        <li><a href="/">Playstation</a></li>
+                        <li><a href="/">Xbox</a></li>
+                        <li><a href="/">Contato</a></li>
+                    </ul>
                 </nav>
             </div>
-            <nav class="header-dir-bot">
-                <p class="header-bot-seta"><a href="/">Retro</a></p>
-                <p class="header-bot-seta"><a href="/">Nintendo</a></p>
-                <p class="header-bot-seta"><a href="/">Playstation</a></p>
-                <p class="header-bot-seta"><a href="/">Xbox</a></p>
-                <p><a href="/">Contato</a></p>
+            <nav id="navbot">
+                <ul class="header-dir-bot" role="menu">
+                    <li><a href="/">Retro</a></li>
+                    <li class="header-nintendo"><a href="/">Nintendo</a></li>
+                    <li class="header-playstation"><a href="/">Playstation</a></li>
+                    <li class="header-xbox"><a href="/">Xbox</a></li>
+                    <li><a href="/">Contato</a></li>
+                </ul>
             </nav>
         </div>
     </header>
