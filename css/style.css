@@ -1,5 +1,8 @@
 /* GLOBAL */
 @import "/css/global.css";
 
-/* MAIN */
+/* HEADER */
 @import "/css/header.css";
+
+/* MAIN */
+@import "/css/main.css";

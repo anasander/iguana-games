@@ -1,0 +1,113 @@
+#main {
+  margin-top: 100px;
+  justify-content: center;
+  align-items: center;
+  background-color: cadetblue;
+}
+
+.main-bg {
+  background: linear-gradient(180deg, #1d0300 0%, #d29f77 100%);
+  box-shadow: inset 0 -190px #ffffff;
+}
+
+.main-container {
+  max-width: 1200px;
+  margin: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.main-banner img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+  margin-top: 40px;
+  border-radius: 4px;
+}
+
+.main-desc {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  border-bottom: 2px solid #e9ebf5;
+  padding-bottom: 60px;
+}
+
+.main-desc-esq {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  color: #034ea2;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.main-desc-esq button {
+  width: 200px;
+  height: 50px;
+  background: linear-gradient(180deg, #ffe661 0%, #ffcb05 100%);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  border: none;
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #602901;
+}
+
+.main-desc-esq button:hover {
+  cursor: pointer;
+  background: linear-gradient(180deg, #ffcb05 0%, #cc9302 100%);
+}
+
+.main-desc-dir p:first-child {
+  font-weight: 400;
+  font-size: 1rem;
+  text-align: end;
+  margin-bottom: 4px;
+  color: #034ea2;
+}
+.main-desc-dir p:nth-child(2) {
+  font-weight: 400;
+  font-size: 1rem;
+  color: #4a4b5c;
+}
+
+@media (max-width: 1020px) {
+  .main-banner img {
+    margin-top: 20px;
+  }
+  .main-desc {
+    display: block;
+    margin-top: 20px;
+    padding-bottom: 30px;
+  }
+  .main-desc-esq {
+    gap: 20px;
+    font-size: 0.8rem;
+  }
+  .main-desc-esq button {
+    width: 130px;
+    height: 40px;
+    font-size: 0.8rem;
+  }
+  .main-desc-dir {
+    margin-top: 20px;
+  }
+  .main-desc-dir p:first-child {
+    font-size: 0.8rem;
+    text-align: start;
+  }
+  .main-desc-dir p:nth-child(2) {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .main-bg {
+    background: linear-gradient(180deg, #1d0300 0%, #d29f77 100%);
+    box-shadow: inset 0 -230px #ffffff;
+  }
+  .main-desc-esq {
+    gap: 10px;
+  }
+}

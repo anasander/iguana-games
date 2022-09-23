@@ -9,6 +9,7 @@
   top: 0;
   width: 100%;
   box-sizing: border-box;
+  background-color: #ffffff;
 }
 
 .header-esq {
@@ -261,7 +262,7 @@
     display: none;
     position: absolute;
     width: 100%;
-    top: 88.5px;
+    top: 87px;
     left: 0px;
     padding: 10px;
     background-color: #e9ebf5;
@@ -271,7 +272,7 @@
     display: none;
     position: absolute;
     width: 100%;
-    top: 133.5px;
+    top: 132px;
     left: 0px;
     padding: 10px;
     justify-content: center;
@@ -340,7 +341,7 @@
   }
   #nav.active #menu2 {
     position: absolute;
-    top: 245.5px;
+    top: 244px;
   }
   #menu,
   #menu2 {
