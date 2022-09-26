@@ -11,17 +11,17 @@
 
 .main-bg {
   background: linear-gradient(180deg, #1d0300 0%, #d29f77 100%);
-  box-shadow: inset 0 -190px #ffffff;
+  box-shadow: inset 0 -190px var(--color-w);
 }
 
 .main-bg-2 {
   background: linear-gradient(180deg, #15181d 0%, #1669a5 100%);
-  box-shadow: inset 0 -190px #ffffff;
+  box-shadow: inset 0 -190px var(--color-w);
 }
 
 .main-bg-3 {
   background: linear-gradient(180deg, #150c08 0%, #cbbf72 100%);
-  box-shadow: inset 0 -190px #ffffff;
+  box-shadow: inset 0 -190px var(--color-w);
 }
 
 .main-banner img {
@@ -37,7 +37,7 @@
   display: flex;
   justify-content: space-between;
   margin-top: 40px;
-  border-bottom: 2px solid #e9ebf5;
+  border-bottom: 2px solid var(--color-g-1);
   padding-bottom: 60px;
 }
 
@@ -46,7 +46,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 40px;
-  color: #034ea2;
+  color: var(--color-b-6);
   font-weight: 600;
   font-size: 1rem;
 }
@@ -60,7 +60,7 @@
   border: none;
   font-weight: 700;
   font-size: 1.2rem;
-  color: #602901;
+  color: var(--color-y-8);
 }
 
 .main-desc-esq button:hover {
@@ -73,12 +73,12 @@
   font-size: 1rem;
   text-align: end;
   margin-bottom: 4px;
-  color: #034ea2;
+  color: var(--color-b-6);
 }
 .main-desc-dir p:nth-child(2) {
   font-weight: 400;
   font-size: 1rem;
-  color: #4a4b5c;
+  color: var(--color-g-7);
 }
 
 .btn-slideshow {
@@ -94,8 +94,8 @@
 #btn-esq,
 #btn-dir {
   font-weight: bold;
-  color: #5a5d73;
-  background-color: #e9ebf5;
+  color: var(--color-g-6);
+  background-color: var(--color-g-1);
   width: 80px;
   height: 20px;
   border: none;
@@ -105,7 +105,7 @@
 #btn-esq:hover,
 #btn-dir:hover {
   cursor: pointer;
-  background-color: #d1d4e9;
+  background-color: var(--color-g-2);
 }
 
 @media (max-width: 1020px) {
@@ -140,13 +140,13 @@
 
 @media (max-width: 498px) {
   .main-bg-3 {
-    box-shadow: inset 0 -230px #ffffff;
+    box-shadow: inset 0 -230px var(--color-w);
   }
 }
 
 @media (max-width: 425px) {
   .main-bg {
-    box-shadow: inset 0 -230px #ffffff;
+    box-shadow: inset 0 -230px var(--color-w);
   }
   .main-desc-esq {
     gap: 10px;

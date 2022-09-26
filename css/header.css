@@ -3,13 +3,13 @@
   grid-template-columns: 220px 1fr;
   height: 100px;
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
-  color: #034ea2;
+  color: var(--color-b-6);
   font-size: 1rem;
   position: fixed;
   top: 0;
   width: 100%;
   box-sizing: border-box;
-  background-color: #ffffff;
+  background-color: var(--color-w);
   z-index: 1001;
 }
 
@@ -18,7 +18,7 @@
   box-sizing: border-box;
   width: 220px;
   height: 100px;
-  border-right: solid 2px #ffe661;
+  border-right: solid 2px var(--color-y-4);
   background: linear-gradient(180deg, #034ea2 0%, #013d80 100%);
 }
 
@@ -36,7 +36,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  border-bottom: solid 2px #ffe661;
+  border-bottom: solid 2px var(--color-y-4);
   justify-content: space-evenly;
 }
 
@@ -51,9 +51,9 @@
   width: 350px;
   height: 32px;
   padding-left: 12px;
-  background: #e9ebf5;
+  background: var(--color-g-1);
   border-radius: 4px 0px 0px 4px;
-  border: solid 2px #d1d4e9;
+  border: solid 2px var(--color-g-2);
   border-right: none;
   color: #4a4b5c;
   box-sizing: border-box;
@@ -216,7 +216,7 @@
 
 #nav li:hover,
 #navbot li:hover {
-  border-bottom: 2px solid #034ea2;
+  border-bottom: 2px solid var(--color-b-6);
 }
 
 @media (max-width: 1394px) {
@@ -240,7 +240,7 @@
   }
   #hamburguer {
     width: 30px;
-    border-top: 4px solid #034ea2;
+    border-top: 4px solid var(--color-b-6);
   }
   #hamburguer::after,
   #hamburguer::before {
@@ -248,7 +248,7 @@
     display: block;
     width: 30px;
     height: 4px;
-    background-color: #034ea2;
+    background-color: var(--color-b-6);
     margin-top: 5px;
     transition: 0.3s;
     position: relative;
@@ -271,7 +271,7 @@
     top: 87px;
     left: 0px;
     padding: 10px;
-    background-color: #e9ebf5;
+    background-color: var(--color-g-1);
     justify-content: center;
   }
   #menu2 {
@@ -282,14 +282,14 @@
     left: 0px;
     padding: 10px;
     justify-content: center;
-    background-color: #e9ebf5;
+    background-color: var(--color-g-1);
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
   }
 
   #menu a:hover,
   #menu2 a:hover {
     padding: 5px 10px;
-    background-color: #d1d4e9;
+    background-color: var(--color-g-2);
     border-radius: 4px;
   }
   #navbot {
@@ -300,7 +300,7 @@
   }
   #nav.active #menu {
     display: flex;
-    border-bottom: solid 2px #d1d4e9;
+    border-bottom: solid 2px var(--color-g-2);
     padding-bottom: 10px;
     animation: slidedown 0.5s forwards;
   }
@@ -360,7 +360,7 @@
   #menu li,
   #menu2 li {
     padding: 5px;
-    border-left: solid 4px #d1d4e9;
+    border-left: solid 4px var(--color-g-2);
   }
   .header-search input {
     width: 200px;

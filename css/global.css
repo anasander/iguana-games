@@ -24,3 +24,42 @@ body {
 a {
   color: inherit;
 }
+
+/* CORES */
+:root {
+  --color-b-1: #e9fffb;
+  --color-b-2: #b8ffff;
+  --color-b-3: #91e5ff;
+  --color-b-4: #5ca9f0;
+  --color-b-5: #2771c5;
+  --color-b-6: #034ea2;
+  --color-b-7: #013d80;
+  --color-b-8: #002a68;
+  --color-b-9: #00114e;
+  --color-b-10: #010529;
+
+  --color-y-1: #f5ffea;
+  --color-y-2: #ebffb4;
+  --color-y-3: #f5ff7e;
+  --color-y-4: #ffe661;
+  --color-y-5: #ffcb05;
+  --color-y-6: #cc9302;
+  --color-y-7: #8c4d02;
+  --color-y-8: #602901;
+  --color-y-9: #390f01;
+  --color-y-10: #1d0300;
+
+  --color-w: #ffffff;
+  --color-g-1: #e9ebf5;
+  --color-g-2: #d1d4e9;
+  --color-g-3: #b0b5d1;
+  --color-g-4: #8f92ad;
+  --color-g-5: #757a93;
+  --color-g-6: #5a5d73;
+  --color-g-7: #4a4b5c;
+  --color-g-8: #3a3c49;
+  --color-g-9: #272832;
+  --color-g-10: #1b1d24;
+  --color-g-11: #0D0F14
+  --color-bl: #000000;
+}
