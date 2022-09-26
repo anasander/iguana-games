@@ -1,19 +1,92 @@
+.novidades {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
 .novidades-bg {
   max-width: 1200px;
   margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
 }
 
-.novidades-bg h2 {
+.novidades h2 {
   font-family: "Nintender";
   font-weight: 400;
   font-size: 2.5rem;
   letter-spacing: 0.025em;
   color: var(--color-b-6);
+  margin-bottom: 40px;
+}
+
+.novidades-bg {
+  display: flex;
+  overflow: auto;
+  gap: 80px;
 }
 
 .novidades-item {
-  width: 300px;
+  min-width: 300px;
   height: 400px;
+  background-color: var(--color-g-1);
+  border-radius: 4px;
+}
+
+.novidades-item-img img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+  border-radius: 4px 4px 0 0;
+  border-bottom: solid 8px var(--color-y-5);
+}
+
+.novidades-item-conteudo {
+  padding: 20px;
+}
+
+.novidades-item-conteudo h3 {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 1.3rem;
+  color: var(--color-y-8);
+  border-bottom: solid 2px var(--color-g-2);
+  padding-bottom: 12px;
+}
+
+.novidades-item-conteudo span {
+  font-size: 1.2rem;
+  color: var(--color-y-7);
+}
+
+.novidades-conteudo-extra {
+  border-width: 8px;
+  border-style: solid;
+  border-image: linear-gradient(180deg, #ffe661 0%, #ffcb05 100%) 1;
+  border-right: none;
+  border-bottom: none;
+  border-top: none;
+  padding-left: 8px;
+  margin-top: 50px;
+}
+
+.novidades-conteudo-extra p:first-child {
+  color: var(--color-g-8);
+  font-size: 1rem;
+}
+
+.novidades-conteudo-extra p:nth-child(2) {
+  color: var(--color-g-6);
+  font-size: 0.8rem;
+}
+
+@media (max-width: 770px) {
+  .novidades {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .novidades-bg {
+    gap: 40px;
+  }
+  .novidades h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
 }
