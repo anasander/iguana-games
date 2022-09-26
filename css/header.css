@@ -214,6 +214,11 @@
   position: absolute;
 }
 
+#nav li:hover,
+#navbot li:hover {
+  border-bottom: 2px solid #034ea2;
+}
+
 @media (max-width: 1394px) {
   .header {
     align-items: center;
@@ -311,6 +316,10 @@
   }
   .header-bot-seta::after {
     display: none;
+  }
+  #nav li:hover,
+  #navbot li:hover {
+    border-bottom: none;
   }
 }
 

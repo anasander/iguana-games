@@ -30,17 +30,17 @@ function plusDivs(n) {
 
 function showDivs(n) {
   var i;
-  var x = document.getElementsByClassName("slideshow");
-  if (n > x.length) {
+  var show = document.getElementsByClassName("slideshow");
+  if (n > show.length) {
     slideIndex = 1;
   }
   if (n < 1) {
-    slideIndex = x.length;
+    slideIndex = show.length;
   }
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
+  for (i = 0; i < show.length; i++) {
+    show[i].style.display = "none";
   }
-  x[slideIndex - 1].style.display = "block";
+  show[slideIndex - 1].style.display = "block";
 }
 
 // ANIMAÇÃO
@@ -48,15 +48,15 @@ var slideIndex = 0;
 
 function changeSlide() {
   var i;
-  var x = document.getElementsByClassName("slideshow");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
+  var slides = document.getElementsByClassName("slideshow");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
   }
   slideIndex++;
-  if (slideIndex > x.length) {
+  if (slideIndex > slides.length) {
     slideIndex = 1;
   }
-  x[slideIndex - 1].style.display = "block";
+  slides[slideIndex - 1].style.display = "block";
   setTimeout(changeSlide, 10000);
 }
 changeSlide();
