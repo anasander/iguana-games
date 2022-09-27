@@ -36,7 +36,7 @@
 .main-desc {
   display: flex;
   justify-content: space-between;
-  margin-top: 40px;
+  margin-top: 20px;
   border-bottom: 2px solid var(--color-g-1);
   padding-bottom: 60px;
 }
