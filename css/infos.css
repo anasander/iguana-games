@@ -1,22 +1,119 @@
 .infos {
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 0 20px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  border-top: solid 2px var(--color-g-1);
+}
+
+.infos-bg {
+  display: flex;
+  overflow: auto;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  gap: 40px;
+}
+
+.infos-bg:first-child {
+  padding-left: 20px;
 }
 
 .infos-item {
-  justify-content: space-evenly;
   width: 360px;
   height: 450px;
   background: linear-gradient(147.38deg, #034ea2 0%, #013d80 100%);
   box-shadow: 0px 2px 2px rgba(3, 78, 162, 0.1);
   border-radius: 4px;
-  border-top: solid 2px var(--color-g-1);
-  padding-top: 60px;
 }
 
-.infos-item img {
-  max-height: 190px;
-  max-width: 309px;
-  object-fit: contain;
+.infos-item:hover {
+  opacity: 0.9;
+}
+
+.infos-item h2 {
+  color: var(--color-g-1);
+  font-family: "Nintender";
+  font-size: 2.5rem;
+  font-weight: 400;
+  padding-top: 40px;
+}
+
+.infos-img {
+  padding-top: 44px;
+}
+
+.infos-img-2 {
+  padding-top: 15px;
+}
+
+.infos-img-3 {
+  padding-top: 26px;
+}
+
+.infos-item p {
+  color: var(--color-g-2);
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+.infos-desc {
+  padding-top: 50px;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.infos-desc-2 {
+  padding-top: 15px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.infos-desc-3 {
+  padding-top: 19px;
+  padding-left: 95px;
+  padding-right: 95px;
+}
+
+@media (max-width: 770px) {
+  .infos-bg {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    gap: 20px;
+  }
+  .infos-item {
+    width: 360px;
+    height: 340px;
+  }
+  .infos-item h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding-top: 20px;
+  }
+  .infos-img {
+    padding-top: 22px;
+  }
+  .infos-img-2 {
+    padding-top: 15px;
+  }
+  .infos-img-3 {
+    padding-top: 30px;
+  }
+  .infos-item p {
+    font-size: 1rem;
+  }
+  .infos-desc {
+    padding-top: 25px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .infos-desc-2 {
+    padding-top: 15px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .infos-desc-3 {
+    padding-top: 24px;
+    padding-left: 45px;
+    padding-right: 45px;
+  }
 }
