@@ -109,9 +109,6 @@
 }
 
 @media (max-width: 1020px) {
-  .main-banner img {
-    margin-top: 20px;
-  }
   .main-desc {
     display: block;
     margin-top: 20px;

@@ -55,7 +55,7 @@
   border-radius: 4px 0px 0px 4px;
   border: solid 2px var(--color-g-2);
   border-right: none;
-  color: #4a4b5c;
+  color: var(--color-g-7);
   box-sizing: border-box;
 }
 

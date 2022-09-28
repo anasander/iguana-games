@@ -17,10 +17,10 @@
         </div>
         <div class="header-dir">
             <div class="header-dir-top">
-                <div class="header-search">
+                <form action="/" class="header-search">
                     <input type="text" placeholder="Procurar por jogos, consoles, acessórios...">
                     <button type="submit"><img src="/img/icons/svg/search.svg" alt=""></button>
-                </div>
+                </form action="/">
                 <nav id="nav">
                     <button id="btn-menu" aria-label="Abrir menu" aria-haspopup="true" aria-controls="menu menu2" aria-expanded="false"><span id="hamburguer"></span></button>
                     <ul id="menu" class="header-link-int" role="menu">
@@ -50,7 +50,7 @@
         </div>
     </header>
 
-    <main id="main">
+    <main id="main" aria-label="Lançamentos">
 
         <div class="main-bg slideshow">
             <div class="main-container">
@@ -113,7 +113,7 @@
 
     </main>
 
-    <section class="novidades container">
+    <section class="novidades container" aria-label="Novidades da Loja">
         <h2>Novidades</h2>
 
         <div class="novidades-bg">
@@ -181,7 +181,7 @@
         </div>
     </section>
 
-    <section class="infos container-2">
+    <section class="infos container-2" aria-label="Informações sobre a loja">
 
         <div class="infos-bg">
 
@@ -219,7 +219,7 @@
 
     </section>
 
-    <article class="noticias">
+    <article class="noticias" aria-label="Notícias">
 
         <div class="noticias-item-1">
             <div class="noticias-item-conteudo">
@@ -299,6 +299,18 @@
         </div>
 
     </article>
+
+    <section class="newsletter" aria-label="Newsletter">
+        <div class="newsletter-bg">
+            <p>Newsletter</p>
+            <h3 class="padding-8">Receba todas as novidades</h3>
+            <h3>por e-mail</h3>
+            <form action="/" class="newsletter-search">
+                <input type="email" placeholder="Coloque seu e-mail aqui">
+                <button type="submit"><img src="/img/icons/svg/seta-dir.svg" alt=""></button>
+            </form>
+        </div>
+    </section>
 
     <footer>
 

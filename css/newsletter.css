@@ -1,0 +1,142 @@
+.newsletter {
+  display: flex;
+  margin: 100px auto;
+  padding: 20px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.newsletter-bg {
+  width: 1160px;
+  height: 400px;
+  background: linear-gradient(96.78deg, #013d80 0%, #002a68 100%);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+
+.newsletter-bg p {
+  width: 160px;
+  color: var(--color-b-3);
+  font-weight: 400;
+  font-size: 1.25rem;
+  margin: 0 auto;
+  padding-top: 60px;
+  position: relative;
+}
+
+.newsletter-bg p::before {
+  content: "";
+  width: 8px;
+  height: 18px;
+  top: 65px;
+  left: 14px;
+  background: var(--color-b-3);
+  position: absolute;
+}
+
+.newsletter-bg h3 {
+  color: var(--color-b-1);
+  font-family: "Nintender";
+  font-weight: 400;
+  font-size: 2.5rem;
+  line-height: 46px;
+}
+
+.padding-8 {
+  margin-top: 8px;
+}
+
+.newsletter-search {
+  display: flex;
+  justify-content: center;
+  margin-top: 72px;
+}
+
+.newsletter-bg input {
+  font-size: 1.5rem;
+  padding: 20px;
+  width: 1000px;
+  height: 68px;
+  background: var(--color-g-1);
+  border-radius: 4px 0 0 4px;
+  border: none;
+  box-sizing: border-box;
+  color: var(--color-g-7);
+}
+
+.newsletter-bg input:focus {
+  outline: none;
+}
+
+.newsletter-bg button {
+  width: 60px;
+  height: 68px;
+  background: var(--color-g-1);
+  border-radius: 0 4px 4px 0;
+  border: none;
+  box-sizing: border-box;
+  padding-right: 20px;
+}
+
+.newsletter-bg button:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 1140px) {
+  .newsletter-bg input {
+    width: 600px;
+  }
+}
+
+@media (max-width: 770px) {
+  .newsletter {
+    margin: 30px auto;
+  }
+  .newsletter-bg {
+    width: 1160px;
+    height: 300px;
+  }
+  .newsletter-bg p {
+    font-size: 1rem;
+    padding-top: 30px;
+  }
+  .newsletter-bg p::before {
+    content: "";
+    width: 8px;
+    height: 14px;
+    top: 34px;
+    left: 24px;
+  }
+  .newsletter-bg h3 {
+    font-size: 1.8rem;
+  }
+  .newsletter-search {
+    margin-top: 36px;
+  }
+  .newsletter-bg input {
+    width: 400px;
+  }
+}
+
+@media (max-width: 600px) {
+  .newsletter-bg h3 {
+    font-size: 1.5rem;
+    padding: 0 12px;
+  }
+  .newsletter-bg input {
+    font-size: 1rem;
+    padding: 12px;
+    width: 300px;
+    height: 40px;
+  }
+  .newsletter-bg button {
+    width: 30px;
+    height: 40px;
+    padding-right: 12px;
+  }
+  .newsletter-search img {
+    width: 90%;
+    height: auto;
+  }
+}
