@@ -1,0 +1,57 @@
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-b-6);
+}
+
+.iguana-logo {
+  padding: 20px 80px;
+}
+
+.redes-sociais {
+  display: flex;
+  gap: 60px;
+  padding: 0 80px;
+}
+
+.footer-mid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 40px 80px;
+  background-color: var(--color-g-1);
+}
+
+.footer-grid-1 {
+  border-right: solid 2px var(--color-g-2);
+  padding-right: 40px;
+  margin-right: 40px;
+}
+
+.footer-grid-1 h4,
+.footer-grid-2 h4,
+.footer-grid-3 h4,
+.footer-grid-4 h4 {
+  color: var(--color-b-6);
+  font-family: "Nintender";
+  font-weight: 400;
+  font-size: 2rem;
+}
+
+.footer-grid-1 ul,
+.footer-grid-2 ul,
+.footer-grid-3 ul,
+.footer-grid-4 ul {
+  color: var(--color-g-7);
+  font-weight: 400;
+  font-size: 1.25rem;
+  margin-top: 40px;
+}
+
+.margin-20 {
+  margin-top: 20px;
+}
+
+.margin-40 {
+  margin-top: 40px;
+}
