@@ -4,6 +4,7 @@
   grid-template-rows: 320px 440px 320px 400px 400px;
   padding: 60px 40px;
   gap: 40px;
+  justify-content: center;
   background: linear-gradient(180deg, #d1d4e9 0%, #b0b5d1 100%);
 }
 
@@ -45,7 +46,8 @@
 }
 
 .noticias-saiba-mais:hover {
-  opacity: 0.8;
+  animation: hover 0.3s forwards;
+  color: var(--color-y-7);
 }
 
 .noticias-saiba-mais-2 {
@@ -57,7 +59,17 @@
 }
 
 .noticias-saiba-mais-2:hover {
-  opacity: 0.8;
+  animation: hover 0.3s forwards;
+  color: var(--color-y-7);
+}
+
+@keyframes hover {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .noticias-item-1 {
@@ -175,4 +187,89 @@
   height: 400px;
   object-fit: contain;
   border-radius: 4px 0 0 4px;
+}
+
+@media (max-width: 1460px) {
+  .noticias {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px 20px;
+    gap: 20px;
+  }
+  .noticias-item-5 {
+    width: 700px;
+    height: 400px;
+  }
+  .noticias-item-5 img {
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 770px) {
+  .noticias-item-conteudo {
+    padding: 20px;
+  }
+  .noticias h3 {
+    font-size: 1.1rem;
+    padding-left: 16px;
+  }
+  .noticias h3::before {
+    height: 14px;
+  }
+  .noticias-desc {
+    font-size: 0.9rem;
+    padding-top: 16px;
+  }
+  .noticias-saiba-mais,
+  .noticias-saiba-mais-2 {
+    font-size: 1rem;
+    margin-top: 12px;
+  }
+  .noticias-item-1 img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+  }
+  .noticias-item-2 {
+    height: 550px;
+  }
+  .noticias-item-2 img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+  .noticias-item-3 {
+    height: 500px;
+  }
+  .noticias-item-3 img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+  .noticias-item-4 img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+  }
+  .noticias-item-5 img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+  }
+  .noticias-item-6,
+  .noticias-item-7 {
+    height: 250px;
+  }
+  .noticias-item-6 img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+  }
+  .noticias-item-7 img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+  }
 }
