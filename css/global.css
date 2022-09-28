@@ -37,6 +37,14 @@ a {
   padding: 0 20px;
 }
 
+.margin-20 {
+  margin-top: 20px;
+}
+
+.margin-40 {
+  margin-top: 40px;
+}
+
 /* CORES */
 :root {
   --color-b-1: #e9fffb;
@@ -74,4 +82,10 @@ a {
   --color-g-10: #1b1d24;
   --color-g-11: #0d0f14;
   --color-bl: #000000;
+}
+
+@media (max-width: 770px) {
+  .margin-40 {
+    margin-top: 20px;
+  }
 }
