@@ -7,10 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="/img/icons/svg/favicon.svg" type="image/x-icon">
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <title>Iguana Games</title>
 </head>
 
 <body>
+
     <header class="header">
         <div class="header-esq">
             <a href="/"><img src="/img/icons/iguana-games-1.png" alt="Iguana Games logo"></a>
@@ -24,26 +28,26 @@
                 <nav id="nav">
                     <button id="btn-menu" aria-label="Abrir menu" aria-haspopup="true" aria-controls="menu menu2" aria-expanded="false"><span id="hamburguer"></span></button>
                     <ul id="menu" class="header-link-int" role="menu">
-                        <li class="header-link-int-1"><a href="/">Fale com a gente!</a></li>
+                        <li class="header-link-int-1"><a onclick="abreFormulario()">Fale com a gente!</a></li>
                         <li class="header-link-int-2"><a href="/">Lista de Desejos</a></li>
                         <li class="header-link-int-3"><a href="/">Carrinho</a></li>
                         <li class="header-link-int-4"><a href="/">Minha Conta</a></li>
                     </ul>
                     <ul id="menu2" class="navhidden" role="menu">
-                        <li><a href="/">Retro</a></li>
-                        <li><a href="/">Nintendo</a></li>
-                        <li><a href="/">Playstation</a></li>
-                        <li><a href="/">Xbox</a></li>
+                        <li><a href="/jogos.html">Retro</a></li>
+                        <li><a href="/jogos.html">Nintendo</a></li>
+                        <li><a href="/jogos.html">Playstation</a></li>
+                        <li><a href="/jogos.html">Xbox</a></li>
                         <li><a href="#footer">Contato</a></li>
                     </ul>
                 </nav>
             </div>
             <nav id="navbot">
                 <ul class="header-dir-bot" role="menu">
-                    <li><a href="/">Retro</a></li>
-                    <li class="header-nintendo"><a href="/">Nintendo</a></li>
-                    <li class="header-playstation"><a href="/">Playstation</a></li>
-                    <li class="header-xbox"><a href="/">Xbox</a></li>
+                    <li><a href="/jogos.html">Retro</a></li>
+                    <li class="header-nintendo"><a href="/jogos.html">Nintendo</a></li>
+                    <li class="header-playstation"><a href="/jogos.html">Playstation</a></li>
+                    <li class="header-xbox"><a href="/jogos.html">Xbox</a></li>
                     <li><a href="#footer">Contato</a></li>
                 </ul>
             </nav>
@@ -311,6 +315,20 @@
             </form>
         </div>
     </section>
+
+    <div>
+        <button class="botao-abrir" onclick="abreFormulario()"><img src="/img/icons/svg/ask-botao.svg" alt="Chat"></button>
+
+        <div class="chat" id="formulario">
+            <form action="/" class="formulario-container">
+                <h4>Fale Conosco</h4>
+                <label for="msg">Como posso ajudar?</label>
+                <textarea name="msg" placeholder="Nos conte sua dúvida..." required></textarea>
+                <button type="submit" class="botao-chat">ENVIAR</button>
+                <button type="button" class="botao-cancela" onclick="fechaFormulario()">FECHAR</button>
+            </form>
+        </div>
+    </div>
 
     <footer id="footer">
         <div class="footer-top">

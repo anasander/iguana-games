@@ -60,3 +60,12 @@ function changeSlide() {
   setTimeout(changeSlide, 10000);
 }
 changeSlide();
+
+// BOTÃO CHAT
+function abreFormulario() {
+  document.getElementById("formulario").style.display = "block";
+}
+
+function fechaFormulario() {
+  document.getElementById("formulario").style.display = "none";
+}

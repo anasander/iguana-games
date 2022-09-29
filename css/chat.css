@@ -1,0 +1,95 @@
+.chat {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 20px;
+  border: 2px solid #9fffa9;
+  z-index: 9;
+  box-sizing: border-box;
+  border-radius: 10px 10px 0 0;
+  text-align: center;
+}
+
+.botao-abrir {
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(180deg, #56d062 0%, #3dbf4a 100%);
+  box-shadow: 0px 4px 2px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 60px;
+  border: none;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.7;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+}
+
+.formulario-container {
+  max-width: 300px;
+  padding: 20px;
+  background-color: #cbffd0;
+  border-radius: 7px 7px 0 0;
+}
+
+.formulario-container h4 {
+  font-size: 1.5rem;
+  color: #00a010;
+}
+
+.formulario-container label {
+  color: #6b9670;
+}
+
+.formulario-container textarea {
+  color: #6b9670;
+  font-size: 1rem;
+  width: 90%;
+  padding: 12px;
+  margin: 10px 0 20px 0;
+  border: none;
+  border-radius: 4px;
+  background: #e5ffe7;
+  resize: none;
+  min-height: 200px;
+}
+
+.formulario-container textarea:focus {
+  outline: solid 2px #54cf60;
+  background-color: #f6fff7;
+}
+
+.formulario-container button {
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.25rem;
+  background-color: #3fc04b;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 60px;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 10px;
+  opacity: 0.8;
+}
+
+.formulario-container .botao-cancela {
+  background-color: #6b9670;
+}
+
+.botao-abrir:hover,
+.formulario-container button:hover {
+  opacity: 1;
+  transition-duration: 0.5s;
+}
+
+@media (max-width: 770px) {
+  .botao-abrir {
+    width: 80px;
+    height: 80px;
+    bottom: 20px;
+    right: 20px;
+  }
+}

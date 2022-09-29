@@ -99,6 +99,7 @@
 }
 
 .header-link-int-1 {
+  cursor: pointer;
   position: relative;
 }
 
