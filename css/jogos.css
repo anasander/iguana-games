@@ -1,0 +1,41 @@
+.jogos-banner {
+  display: flex;
+  margin-top: 100px;
+  height: 300px;
+  background: url(/img/jogos-banner.jpg) no-repeat;
+  color: var(--color-w);
+  justify-content: center;
+  align-items: center;
+}
+
+.jogos-bg {
+  background-color: var(--color-g-5);
+  width: 560px;
+  margin: 20px;
+  opacity: 0.8;
+  border-radius: 4px;
+}
+
+.jogos-bg-titulo {
+  display: flex;
+  gap: 8px;
+  font-family: "Nintender";
+  letter-spacing: 0.25rem;
+  font-weight: 400;
+  font-size: 2rem;
+  padding: 40px 0 0px 60px;
+}
+
+.jogos-bg-desc {
+  padding: 12px 60px 40px 60px;
+}
+
+@media (max-width: 770px) {
+  .jogos-bg-titulo {
+    font-size: 1.6rem;
+    padding: 20px 0 0px 30px;
+  }
+  .jogos-bg-desc {
+    padding: 12px 30px 20px 30px;
+  }
+}

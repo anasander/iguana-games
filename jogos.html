@@ -54,7 +54,47 @@
         </div>
     </header>
 
-    <footer id="footer">
+    <section class="jogos-banner">
+        <div class="jogos-bg">
+            <div class="jogos-bg-titulo">
+                <img src="/img/icons/svg/stadia.svg" alt="">
+                <h1>Jogos</h1>
+            </div>
+            <div class="jogos-bg-desc">
+                <p>Lançamentos, promoções, clássicos...</p>
+                <p>Os melhores jogos com os menores preços você só encontra aqui!</p>
+            </div>
+        </div>
+    </section>
+
+    <div>
+        <button class="botao-abrir" onclick="abreFormulario()"><img src="/img/icons/svg/ask-botao.svg" alt="Chat"></button>
+
+        <div class="chat" id="formulario">
+            <form action="/" class="formulario-container">
+                <h4>Fale Conosco</h4>
+                <label for="msg">Como posso ajudar?</label>
+                <textarea name="msg" placeholder="Nos conte sua dúvida..." required></textarea>
+                <button type="submit" class="botao-chat">ENVIAR</button>
+                <button type="button" class="botao-cancela" onclick="fechaFormulario()">FECHAR</button>
+            </form>
+        </div>
+    </div>
+
+    <main class="jogos-main container">
+        <div class="jogos-main-links-esq">
+            <a href="/index.html">Loja</a>
+            <p>></p>
+            <a href="/jogos.html">Jogos</a>
+        </div>
+        <div class="jogos-main-links-dir">
+            <a href="/jogos.html">Lançamentos</a>
+            <a href="/jogos.html">Promoções</a>
+            <a href="/jogos.html">RetroGames</a>
+        </div>
+    </main>
+
+    <footer id="footer" aria-label="Contato">
         <div class="footer-top">
             <div class="iguana-logo">
                 <a href="/index.html"><img src="/img/icons/svg/iguana-logo.svg" alt="Iguana Games"></a>
@@ -83,8 +123,8 @@
                     <li><a href="/">Jogos</a></li>
                     <li class="margin-20"><a href="/">Consoles</a></li>
                     <li class="margin-20"><a href="/">Acessórios</a></li>
-                    <li class="margin-20"><a href="/">Promoções</a></li>
-                    <li class="margin-20"><a href="/">Jogos Retro</a></li>
+                    <li class="margin-20"><a href="/jogos.html">Promoções</a></li>
+                    <li class="margin-20"><a href="/jogos.html">Jogos Retro</a></li>
                 </ul>
             </div>
 
