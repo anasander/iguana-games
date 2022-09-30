@@ -148,12 +148,14 @@
   margin-bottom: 26px;
 }
 
-.jogos-item-desc p {
+.jogos-item-desc p,
+.jogos-item-desc-3 p {
   font-size: 1.25rem;
   color: var(--color-g-9);
 }
 
-.jogos-item-desc span {
+.jogos-item-desc span,
+.jogos-item-desc-3 span {
   font-weight: 600;
 }
 
@@ -228,13 +230,14 @@
   background-color: #e0e8ff;
 }
 
-@media (max-width: 1045px) {
+@media (max-width: 1060px) {
   .jogos-item-desc h4 {
     font-size: 1.25rem;
     padding-bottom: 20px;
     margin-bottom: 20px;
   }
-  .jogos-item-desc p {
+  .jogos-item-desc p,
+  .jogos-item-desc-3 p {
     font-size: 1rem;
   }
   .jogos-item-extra {
@@ -270,7 +273,8 @@
   .jogos-item-tudo {
     padding: 20px 30px 20px 30px;
   }
-  .jogos-item-desc h4 {
+  .jogos-item-desc h4,
+  .jogos-item-desc-3 h4 {
     font-size: 1.25rem;
     padding-bottom: 10px;
     margin-bottom: 10px;
@@ -284,7 +288,8 @@
 }
 
 @media (max-width: 550px) {
-  .jogos-item-desc p {
+  .jogos-item-desc p,
+  .jogos-item-desc-3 p {
     font-size: 0.9rem;
   }
 }
