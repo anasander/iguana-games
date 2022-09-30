@@ -1,3 +1,60 @@
 .pagina-jogo-bg {
   margin-top: 100px;
+  padding-top: 20px;
+  background: linear-gradient(180deg, #15181d 0%, #1669a5 100%);
+  box-shadow: inset 0 -450px var(--color-w);
+}
+
+.pagina-jogo-item {
+  padding: 40px 60px;
+  background-color: var(--color-g-1);
+  border-radius: 4px;
+}
+
+.pagina-jogo-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.pagina-jogo-links a:hover {
+  color: var(--color-b-5);
+}
+
+.pagina-jogo-conteudo {
+  display: grid;
+  grid-template-columns: 600px 1fr;
+}
+
+#pagina-jogo-galeria {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+#pagina-jogo-galeria img {
+  flex: 1;
+  min-width: 180px;
+  object-fit: contain;
+  border-radius: 4px;
+  filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.1));
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+#pagina-jogo-galeria img:first-child {
+  min-width: 100%;
+  object-fit: cover;
+  opacity: 1;
+}
+
+#pagina-jogo-galeria img:hover {
+  opacity: 1;
+  transition: 0.5s;
+}
+
+.pagina-jogo-grid {
+  display: grid;
+  grid-template-columns: 400px 1fr;
 }
