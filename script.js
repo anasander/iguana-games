@@ -20,9 +20,42 @@ function abrirMenu() {
 }
 abrirMenu();
 
+// BOTÃO CHAT
+function abreFormulario() {
+  document.getElementById("formulario").style.display = "block";
+}
+
+function fechaFormulario() {
+  document.getElementById("formulario").style.display = "none";
+}
+
+// BOTÃO CARREGAR MAIS
+function carregarMais() {
+  document.getElementById("jogos-hidden").style.display = "block";
+  document.getElementById("carregar-mais").style.display = "none";
+}
+
+// GALERIA DE IMAGENS
+const galeria = document.querySelectorAll(".pagina-jogo-galeria img");
+const galeriaTudo = document.querySelector(".pagina-jogo-galeria");
+
+function trocarImagens(event) {
+  const img = event.currentTarget;
+  const media = matchMedia("(min-width: 700px)").matches;
+  if (media) {
+    galeriaTudo.prepend(img);
+  }
+}
+
+function eventoGaleria(img) {
+  img.addEventListener("click", trocarImagens);
+}
+
+galeria.forEach(eventoGaleria);
+
 // SLIDESHOW
 var slideIndex = 1;
-showDivs(slideIndex);
+function showDivs(slideIndex) {}
 
 function plusDivs(n) {
   showDivs((slideIndex += n));
@@ -60,18 +93,3 @@ function changeSlide() {
   setTimeout(changeSlide, 10000);
 }
 changeSlide();
-
-// BOTÃO CHAT
-function abreFormulario() {
-  document.getElementById("formulario").style.display = "block";
-}
-
-function fechaFormulario() {
-  document.getElementById("formulario").style.display = "none";
-}
-
-// BOTÃO CARREGAR MAIS
-function carregarMais() {
-  document.getElementById("jogos-hidden").style.display = "block";
-  document.getElementById("carregar-mais").style.display = "none";
-}
