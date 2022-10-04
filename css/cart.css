@@ -1,7 +1,193 @@
 .formulario {
   margin-top: 100px;
+  padding: 60px 20px;
+  color: var(--color-g-7);
 }
 
-input {
+.formulario-infos-usuario label,
+.formulario-infos-pagamento label {
+  font-weight: 500;
+}
+
+.formulario label {
+  font-size: 1.2rem;
+}
+
+.formulario input,
+.formulario select {
+  width: 560px;
+  height: 32px;
+  border-radius: 4px;
+  background-color: var(--color-g-1);
+  color: var(--color-g-6);
+  border: none;
+  padding-left: 12px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+.data-exp label {
+  display: block;
+}
+
+.data-exp input {
+  width: 260px;
+  height: 32px;
+  border-radius: 4px;
+  background-color: var(--color-g-1);
+  color: var(--color-g-6);
+  border: none;
+  padding-left: 12px;
+  box-sizing: border-box;
+}
+
+.data-exp-1 {
+  margin-right: 35px;
+}
+
+.formulario-infos-pagamento > p:first-child {
+  font-weight: 500;
+  font-size: 1.25rem;
+  color: var(--color-g-8);
+}
+
+.dados-compra-bg {
+  background-color: var(--color-g-1);
+  border-radius: 4px;
+  padding: 40px;
+}
+
+.dados-compra-bg > p {
+  font-size: 1.2rem;
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.dados-compra-bg > p::before {
+  content: "";
+  width: 8px;
+  height: 16px;
+  background: var(--color-g-7);
+  top: 6px;
+  left: 4px;
+  position: absolute;
+}
+
+.dados-compra-img-bg {
+  background-color: var(--color-w);
+  border-radius: 4px;
+  padding: 12px;
+}
+
+.dados-compra-img-bg > p {
+  font-weight: 400;
+  font-size: 0.8rem;
+  color: var(--color-g-7);
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.dados-compra-nome {
+  margin-top: 8px;
+}
+
+.dados-compra-nome h3 {
+  font-weight: 500;
+  font-size: 1.25rem;
+  color: var(--color-y-8);
+}
+
+.dados-compra-nome p {
+  font-weight: 400;
+  font-size: 1.2rem;
+  color: var(--color-y-7);
+}
+
+.dados-compra-quant {
+  background-color: var(--color-g-1);
+  border-radius: 4px;
+  margin-top: 12px;
+}
+
+.dados-compra-quant button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  color: var(--color-g-3);
+}
+
+.dados-compra-quant p {
+  padding: 0 20px;
+}
+
+.dados-compra-img img {
+  cursor: pointer;
+  margin-top: 14px;
+}
+
+.dados-compra-frete {
+  border-bottom: solid 2px var(--color-w);
+  padding: 20px 8px;
+}
+
+.dados-compra-frete p:first-child {
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+.dados-compra-frete p:nth-child(2) {
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+
+.dados-compra-total {
+  padding: 20px 8px 0 8px;
+}
+
+.dados-compra-total p:first-child {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: var(--color-y-8);
+}
+
+.dados-compra-total p:nth-child(2) {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: var(--color-y-7);
+}
+
+/* MUDANÇAS GERAIS */
+.formulario-infos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.dados-compra {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.formulario-infos-usuario,
+.formulario-infos-pagamento {
+  grid-column: 1;
+}
+
+.infos-final {
+  grid-column: 1 / -1;
+}
+
+.dados-compra-img-bg img {
   width: 100%;
+  border-radius: 4px;
+}
+
+.item-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
 }
