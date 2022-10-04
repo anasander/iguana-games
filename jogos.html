@@ -10,12 +10,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <title>Iguana Games</title>
+    <title>Iguana Games | Jogos</title>
 </head>
 
 <body>
 
-    <header class="header">
+    <header class="header" aria-label="menu">
         <div class="header-esq">
             <a href="/"><img src="/img/icons/iguana-games-1.png" alt="Iguana Games logo"></a>
         </div>
@@ -30,7 +30,7 @@
                     <ul id="menu" class="header-link-int" role="menu">
                         <li class="header-link-int-1"><a onclick="abreFormulario()">Fale com a gente!</a></li>
                         <li class="header-link-int-2"><a href="/">Lista de Desejos</a></li>
-                        <li class="header-link-int-3"><a href="/">Carrinho</a></li>
+                        <li class="header-link-int-3"><a href="/cart.html">Carrinho</a></li>
                         <li class="header-link-int-4"><a href="/">Minha Conta</a></li>
                     </ul>
                     <ul id="menu2" class="navhidden" role="menu">
@@ -80,7 +80,7 @@
         </div>
     </div>
 
-    <main class="jogos-main container-2">
+    <main class="jogos-main container-2" aria-label="jogos">
 
         <a href="/jogos.html">
             <div class="jogos-item-1">
@@ -336,7 +336,7 @@
         <button id="carregar-mais" onclick="carregarMais()">+ Carregar mais</button>
     </div>
 
-    <div>
+    <div aria-label="chat fale conosco">
         <button class="botao-abrir" onclick="abreFormulario()"><img src="/img/icons/svg/ask-botao.svg" alt="Chat"></button>
 
         <div class="chat" id="formulario">

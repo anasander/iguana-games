@@ -10,12 +10,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <title>Iguana Games</title>
+    <title>Iguana Games | Jogo Lies of P</title>
 </head>
 
 <body>
 
-    <header class="header">
+    <header class="header" aria-label="menu">
         <div class="header-esq">
             <a href="/"><img src="/img/icons/iguana-games-1.png" alt="Iguana Games logo"></a>
         </div>
@@ -30,7 +30,7 @@
                     <ul id="menu" class="header-link-int" role="menu">
                         <li class="header-link-int-1"><a onclick="abreFormulario()">Fale com a gente!</a></li>
                         <li class="header-link-int-2"><a href="/">Lista de Desejos</a></li>
-                        <li class="header-link-int-3"><a href="/">Carrinho</a></li>
+                        <li class="header-link-int-3"><a href="/cart.html">Carrinho</a></li>
                         <li class="header-link-int-4"><a href="/">Minha Conta</a></li>
                     </ul>
                     <ul id="menu2" class="navhidden" role="menu">
@@ -54,7 +54,7 @@
         </div>
     </header>
 
-    <main class="pagina-jogo-bg">
+    <main class="pagina-jogo-bg" aria-label="Jogo Lies of P">
         <div class="container-2">
 
             <div class="pagina-jogo-item">
@@ -80,9 +80,9 @@
                         <h2>Lies of P</h2>
                         <div class="pagina-jogo-flex">
                             <h3>R$200,00</h3>
-                            <img src="/img/icons/svg/heart-jogo.svg" alt="Lista de Desejos">
+                            <img src="/img/icons/svg/heart-jogo.svg" alt="Adicionar na Lista de Desejos">
                         </div>
-                        <button>Adicionar ao Carrinho</button>
+                        <button><a href="/cart.html">Adicionar ao Carrinho</a></button>
                         <div class="pagina-jogo-resumo">
                             <p>Inspirado na história familiar de Pinóquio, Lies of P é um jogo de ação <span>Soulslike</span> ambientado em um mundo sombrio da <span>Belle Époque</span>. Guie Pinóquio em sua jornada implacável para se tornar humano.</p>
                         </div>
@@ -124,7 +124,7 @@
         </div>
     </main>
 
-    <div>
+    <div aria-label="chat fale conosco">
         <button class="botao-abrir" onclick="abreFormulario()"><img src="/img/icons/svg/ask-botao.svg" alt="Chat"></button>
 
         <div class="chat" id="formulario">

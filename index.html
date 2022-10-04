@@ -15,7 +15,7 @@
 
 <body>
 
-    <header class="header">
+    <header class="header" aria-label="menu">
         <div class="header-esq">
             <a href="/"><img src="/img/icons/iguana-games-1.png" alt="Iguana Games logo"></a>
         </div>
@@ -30,7 +30,7 @@
                     <ul id="menu" class="header-link-int" role="menu">
                         <li class="header-link-int-1"><a onclick="abreFormulario()">Fale com a gente!</a></li>
                         <li class="header-link-int-2"><a href="/">Lista de Desejos</a></li>
-                        <li class="header-link-int-3"><a href="/">Carrinho</a></li>
+                        <li class="header-link-int-3"><a href="/cart.html">Carrinho</a></li>
                         <li class="header-link-int-4"><a href="/">Minha Conta</a></li>
                     </ul>
                     <ul id="menu2" class="navhidden" role="menu">
@@ -199,7 +199,7 @@
                 </div>
             </a>
 
-            <a href="/">
+            <a href="/jogos.html">
                 <div class="infos-item">
                     <h2>Especialistas em Games</h2>
                     <div class="infos-img-2">
@@ -209,15 +209,13 @@
                 </div>
             </a>
 
-            <a href="/">
-                <div class="infos-item">
-                    <h2>Entre em Contato</h2>
-                    <div class="infos-img-3">
-                        <img src="/img/icons/svg/ask-grande.svg" alt="Interrogação">
-                    </div>
-                    <p class="infos-desc-3">Atendimento 24 horas no chat</p>
+            <div class="infos-item" onclick="abreFormulario()">
+                <h2>Entre em Contato</h2>
+                <div class="infos-img-3">
+                    <img src="/img/icons/svg/ask-grande.svg" alt="Interrogação">
                 </div>
-            </a>
+                <p class="infos-desc-3">Atendimento 24 horas no chat</p>
+            </div>
 
         </div>
 
@@ -316,7 +314,7 @@
         </div>
     </section>
 
-    <div>
+    <div aria-label="chat fale conosco">
         <button class="botao-abrir" onclick="abreFormulario()"><img src="/img/icons/svg/ask-botao.svg" alt="Chat"></button>
 
         <div class="chat" id="formulario">
