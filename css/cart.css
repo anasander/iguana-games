@@ -9,12 +9,19 @@
   font-weight: 500;
 }
 
+.formulario-infos-usuario {
+  border-bottom: solid 2px var(--color-g-1);
+  padding-bottom: 40px;
+}
+
 .formulario label {
   font-size: 1.2rem;
 }
 
-.formulario input,
-.formulario select {
+.formulario-infos-usuario input,
+.formulario-infos-usuario select,
+.opcao-cartao div input,
+.opcao-cartao div select {
   width: 560px;
   height: 32px;
   border-radius: 4px;
@@ -24,6 +31,7 @@
   padding-left: 12px;
   margin-bottom: 20px;
   box-sizing: border-box;
+  font-size: 1rem;
 }
 
 .data-exp label {
@@ -159,6 +167,164 @@
   color: var(--color-y-7);
 }
 
+.formulario-infos-pagamento > p {
+  margin-bottom: 20px;
+}
+
+.opcao-cartao,
+.opcao-pix,
+.opcao-boleto {
+  margin-top: 40px;
+}
+
+.opcoes-pagamento label {
+  background: var(--color-g-3);
+  width: 144px;
+  padding: 20px;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.opcoes-pagamento label:hover {
+  background: var(--color-g-4);
+  transition: 0.3s;
+}
+
+.opcoes-pagamento input:checked + label {
+  background: var(--color-b-7);
+  color: var(--color-w);
+}
+
+.opcoes-pagamento label::before {
+  content: "";
+  display: inline-block;
+  box-sizing: border-box;
+  width: 16px;
+  height: 16px;
+  border: solid 1px var(--color-g-8);
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.opcoes-pagamento input:checked + label::before {
+  border-color: var(--color-w);
+  box-shadow: inset 0 0 0 4px var(--color-b-7), inset 0 0 0 8px var(--color-w);
+}
+
+.opcoes-pagamento input {
+  pointer-events: none;
+  position: absolute;
+  opacity: 0;
+}
+
+#opcao-cartao,
+#opcao-pix,
+#opcao-boleto {
+  display: none;
+}
+
+.pergunta {
+  cursor: pointer;
+}
+
+.opcao-cartao {
+  border-bottom: solid 2px var(--color-g-1);
+  padding-bottom: 20px;
+}
+
+.opcao-pix {
+  width: 500px;
+  background-color: var(--color-g-1);
+  padding: 20px;
+  border-radius: 4px;
+}
+
+.opcao-pix p:nth-child(2) {
+  margin-top: 20px;
+}
+
+.opcao-pix span {
+  color: var(--color-b-5);
+  font-weight: 600;
+}
+
+.opcao-boleto {
+  width: 500px;
+  background-color: var(--color-g-1);
+  padding: 20px;
+  border-radius: 4px;
+}
+
+.opcao-boleto p {
+  font-weight: 600;
+}
+
+#numero,
+#complemento,
+#estado,
+#cidade,
+#mes,
+#ano,
+#codigo-segurança,
+#parcelas {
+  width: 260px;
+}
+
+.infos-final p {
+  font-size: 0.9rem;
+}
+
+.infos-final p:first-child {
+  position: relative;
+  padding-left: 16px;
+  margin-bottom: 12px;
+}
+
+.infos-final p:first-child::before {
+  content: "";
+  width: 8px;
+  height: 14px;
+  background-color: var(--color-g-7);
+  left: 2px;
+  top: 3px;
+  position: absolute;
+}
+
+.infos-final p:nth-child(2) {
+  position: relative;
+  padding-left: 16px;
+  margin-bottom: 12px;
+  color: #12631a;
+}
+
+.infos-final p:nth-child(2)::before {
+  content: "";
+  width: 12px;
+  height: 16px;
+  background-image: url(/img/icons/svg/lock.svg);
+  left: -1px;
+  top: 2px;
+  position: absolute;
+}
+
+.btn-comprar {
+  width: 560px;
+  height: 50px;
+  background: linear-gradient(180deg, #ffe661 0%, #ffcb05 100%);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  border: none;
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: var(--color-y-8);
+}
+
+.btn-comprar:hover {
+  cursor: pointer;
+  background: linear-gradient(180deg, #ffcb05 0%, #cc9302 100%);
+}
+
 /* MUDANÇAS GERAIS */
 .formulario-infos {
   display: grid;
@@ -190,4 +356,10 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+}
+
+.input-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
 }

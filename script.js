@@ -35,6 +35,32 @@ function carregarMais() {
   document.getElementById("carregar-mais").style.display = "none";
 }
 
+// FORMAS DE PAGAMENTO
+function cartao() {
+  document.getElementById("opcao-cartao").style.display = "block";
+  document.getElementById("opcao-pix").style.display = "none";
+  document.getElementById("opcao-boleto").style.display = "none";
+}
+
+function pix() {
+  document.getElementById("opcao-pix").style.display = "block";
+  document.getElementById("opcao-cartao").style.display = "none";
+  document.getElementById("opcao-boleto").style.display = "none";
+}
+
+function boleto() {
+  document.getElementById("opcao-boleto").style.display = "block";
+  document.getElementById("opcao-cartao").style.display = "none";
+  document.getElementById("opcao-pix").style.display = "none";
+}
+
+// ALERTA CODIGO SEGURANCA
+function alerta() {
+  alert(
+    "O Código de Segurança pode ser geralmente encontrado na parte de trás do seu cartão, composto de 3 números."
+  );
+}
+
 // GALERIA DE IMAGENS
 const galeria = document.querySelectorAll(".pagina-jogo-galeria img");
 const galeriaTudo = document.querySelector(".pagina-jogo-galeria");
