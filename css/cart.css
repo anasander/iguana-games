@@ -4,6 +4,15 @@
   color: var(--color-g-7);
 }
 
+.formulario-h1 {
+  font-family: "Nintender", "Poppins";
+  font-weight: 400;
+  font-size: 2.5rem;
+  letter-spacing: 0.025em;
+  color: var(--color-b-6);
+  margin-bottom: 40px;
+}
+
 .formulario-infos-usuario label,
 .formulario-infos-pagamento label {
   font-weight: 500;
@@ -124,7 +133,14 @@
   border: none;
   cursor: pointer;
   padding: 10px;
-  color: var(--color-g-3);
+  color: var(--color-b-6);
+  border-radius: 4px;
+  transition: 0.3s;
+  font-weight: 600;
+}
+
+.dados-compra-quant button:hover {
+  background-color: var(--color-g-2);
 }
 
 .dados-compra-quant p {
@@ -179,7 +195,7 @@
 
 .opcoes-pagamento label {
   background: var(--color-g-3);
-  width: 144px;
+  width: 140px;
   padding: 20px;
   display: inline-block;
   cursor: pointer;
@@ -362,4 +378,119 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
+}
+
+@media (max-width: 1000px) {
+  .formulario {
+    margin-top: 100px;
+    padding: 30px 20px 60px 20px;
+  }
+  .formulario label {
+    font-size: 1rem;
+  }
+  .formulario-h1 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+  .data-exp input {
+    width: 320px;
+  }
+
+  .data-exp-1 {
+    margin-right: 20px;
+  }
+
+  .formulario-infos-pagamento > p:first-child {
+    font-size: 1rem;
+  }
+
+  .dados-compra-bg {
+    padding: 20px;
+  }
+
+  .dados-compra-bg > p {
+    font-size: 1rem;
+    padding-left: 10px;
+    margin-bottom: 10px;
+  }
+  .formulario-infos {
+    grid-template-columns: minmax(340px, 580px);
+    gap: 40px;
+    margin: 0 auto;
+  }
+  .dados-compra {
+    grid-column: 1;
+    grid-row: auto;
+  }
+  .dados-compra-bg > p::before {
+    height: 14px;
+    top: 4px;
+    left: 0px;
+  }
+}
+
+@media (max-width: 600px) {
+  .formulario-infos {
+    grid-template-columns: minmax(300px, 400px);
+    gap: 30px;
+  }
+  .formulario-infos-usuario input,
+  .formulario-infos-usuario select,
+  .opcao-cartao div input,
+  .opcao-cartao div select {
+    width: 100%;
+    height: 32px;
+    margin-bottom: 12px;
+  }
+  #numero,
+  #complemento,
+  #estado,
+  #cidade,
+  #mes,
+  #ano,
+  #codigo-segurança,
+  #parcelas {
+    width: 100%;
+  }
+  .opcoes-pagamento label {
+    width: 90px;
+    padding: 10px;
+    font-size: 1rem;
+  }
+  .dados-compra-nome h3 {
+    font-size: 1rem;
+  }
+  .dados-compra-nome p {
+    font-size: 1rem;
+  }
+  .dados-compra-frete p:first-child {
+    font-size: 1rem;
+  }
+  .dados-compra-frete p:nth-child(2) {
+    font-size: 1rem;
+  }
+  .dados-compra-total p:first-child {
+    font-size: 1rem;
+  }
+  .dados-compra-total p:nth-child(2) {
+    font-size: 1rem;
+  }
+  .opcao-cartao,
+  .opcao-pix,
+  .opcao-boleto {
+    margin-top: 30px;
+  }
+  .opcao-pix {
+    width: 300px;
+  }
+  .opcao-boleto {
+    width: 300px;
+  }
+  .dados-compra-img-bg > p {
+    margin-top: 12px;
+  }
+  .btn-comprar {
+    width: 340px;
+    font-size: 1rem;
+  }
 }

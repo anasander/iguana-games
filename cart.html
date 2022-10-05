@@ -56,45 +56,47 @@
 
     <main class="formulario container-2" aria-label="formulario para compra">
 
+        <h1 class="formulario-h1">Meu Carrinho</h1>
+
         <form class="formulario-infos">
 
             <div class="formulario-infos-usuario">
                 <div>
                     <label for="nome">Nome</label>
-                    <input type="text" id="nome" placeholder="Nome Completo">
+                    <input type="text" id="nome" placeholder="Nome Completo" required>
                 </div>
                 <div>
                     <label for="email">E-mail</label>
-                    <input type="text" id="email" placeholder="contato@email.com">
+                    <input type="text" id="email" placeholder="contato@email.com" required>
                 </div>
                 <div>
                     <label for="cpf">CPF</label>
-                    <input type="text" id="cpf" placeholder="000.000.000-00">
+                    <input type="text" id="cpf" placeholder="000.000.000-00" required>
                 </div>
                 <div>
                     <label for="endereco">Endereço</label>
-                    <input type="text" id="endereço" placeholder="Rua, avenida...">
+                    <input type="text" id="endereço" placeholder="Rua, avenida..." required>
                 </div>
                 <div>
                     <label for="bairro">Bairro</label>
-                    <input type="text" id="bairro" placeholder="Bairro">
+                    <input type="text" id="bairro" placeholder="Bairro" required>
                 </div>
                 <div class="input-grid">
                     <div>
                         <label for="numero">Número</label>
-                        <input type="text" id="numero" placeholder="XXX">
+                        <input type="text" id="numero" placeholder="XXX" required>
                     </div>
                     <div>
                         <label for="complemento">Complemento</label>
-                        <input type="text" id="complemento" placeholder="XXX">
+                        <input type="text" id="complemento" placeholder="XXX" required>
                     </div>
                 </div>
                 <label for="cep">CEP</label>
-                <input type="text" id="cep" placeholder="00.000-000">
+                <input type="text" id="cep" placeholder="00.000-000" required>
                 <div class="input-grid">
                     <div>
                         <label class="formulario-titulo" for="estado">Estado</label>
-                        <select name="estado" id="estado">
+                        <select name="estado" id="estado" required>
                             <option selected disabled value="">Selecione</option>
                             <option value="acre">Acre</option>
                             <option value="alagoas">Alagoas</option>
@@ -127,7 +129,7 @@
                     </div>
                     <div>
                         <label for="cidade">Cidade</label>
-                        <input type="text" id="cidade" placeholder="Sua Cidade">
+                        <input type="text" id="cidade" placeholder="Sua Cidade" required>
                     </div>
                 </div>
             </div>
@@ -135,38 +137,38 @@
             <div class="formulario-infos-pagamento">
                 <p>Forma de Pagamento</p>
                 <div class="opcoes-pagamento">
-                    <input type="radio" name="radio" value="cartao" id="cartao">
+                    <input type="radio" name="radio" value="cartao" id="cartao" required>
                     <label for="cartao" onclick="cartao()">Cartão</label>
-                    <input type="radio" name="radio" value="pix" id="pix">
+                    <input type="radio" name="radio" value="pix" id="pix" required>
                     <label for="pix" onclick="pix()">PIX</label>
-                    <input type="radio" name="radio" value="boleto" id="boleto">
+                    <input type="radio" name="radio" value="boleto" id="boleto" required>
                     <label for="boleto" onclick="boleto()">Boleto</label>
                 </div>
                 <div class="opcao-cartao" id="opcao-cartao">
                     <div>
                         <label for="nome-cartao">Nome do Cartão</label>
-                        <input type="text" id="nome-cartao" placeholder="NOME IMPRESSO NO CARTÃO">
+                        <input type="text" id="nome-cartao" placeholder="NOME IMPRESSO NO CARTÃO" required>
                     </div>
                     <div class="data-exp">
                         <label for="data-exp">Data de Expiração</label>
                         <div class="input-flex">
-                            <input class="data-exp-1" type="text" id="mes" placeholder="Mês">
-                            <input type="text" id="ano" placeholder="Ano">
+                            <input class="data-exp-1" type="text" name="data-exp" id="mes" placeholder="Mês" required>
+                            <input type="text" name="data-exp" id="ano" placeholder="Ano" required>
                         </div>
                     </div>
                     <div>
                         <label for="numero-cartao">Número do Cartão</label>
-                        <input type="text" id="numero-cartao" placeholder="0000 0000 0000 0000">
+                        <input type="text" id="numero-cartao" placeholder="0000 0000 0000 0000" required>
                     </div>
                     <div class="input-grid">
                         <div>
                             <label for="codigo-seguranca">Código de Segurança</label>
                             <img class="pergunta" src="/img/icons/svg/question.svg" alt="Dúvida sobre o Código de Segurança" onclick=alerta()>
-                            <input type="text" id="codigo-segurança" placeholder="XXX">
+                            <input type="text" id="codigo-segurança" placeholder="XXX" required>
                         </div>
                         <div>
                             <label for="parcelas">Quantidade de Parcelas</label>
-                            <select name="parcelas" id="parcelas">
+                            <select name="parcelas" id="parcelas" required>
                                 <option selected disabled value="">Selecione uma opção</option>
                                 <option value="1x">1x de R$200</option>
                                 <option value="2x">2x de R$100</option>
@@ -178,7 +180,7 @@
                 </div>
                 <div class="opcao-pix" id="opcao-pix">
                     <p>Envie um PIX (valor do jogo + frete) para o email: <span>contato@iguanagames.com</span>.</p>
-                    <p>Depois, envie o comprovante de pagamento para: <span>contato@iguanagames.com</span> .</p>
+                    <p>Depois, envie o comprovante de pagamento e seu número da compra para: <span>contato@iguanagames.com</span> .</p>
                 </div>
                 <div class="opcao-boleto" id="opcao-boleto">
                     <p>Opção indisponível no momento.</p>
@@ -226,7 +228,7 @@
                 <p>Compra 100% segura através do nosso site.</p>
             </div>
 
-            <button type="submit" class="btn-comprar">COMPRAR</button>
+            <button type="submit" class="btn-comprar" id="btn-comprar">COMPRAR</button>
         </form>
 
     </main>
