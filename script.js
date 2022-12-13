@@ -68,13 +68,13 @@ function alerta() {
 const galeria = document.querySelectorAll(".pagina-jogo-galeria img");
 const galeriaTudo = document.querySelector(".pagina-jogo-galeria");
 
-function trocarImagens(event) {
+const trocarImagens = (event) => {
   const img = event.currentTarget;
   const media = matchMedia("(min-width: 700px)").matches;
   if (media) {
     galeriaTudo.prepend(img);
   }
-}
+};
 
 function eventoGaleria(img) {
   img.addEventListener("click", trocarImagens);
@@ -83,16 +83,15 @@ function eventoGaleria(img) {
 galeria.forEach(eventoGaleria);
 
 // SLIDESHOW
-var slideIndex = 1;
-function showDivs(slideIndex) {}
+let slideIndex = 1;
 
 function plusDivs(n) {
   showDivs((slideIndex += n));
 }
 
 function showDivs(n) {
-  var i;
-  var show = document.getElementsByClassName("slideshow");
+  let i;
+  let show = document.getElementsByClassName("slideshow");
   if (n > show.length) {
     slideIndex = 1;
   }
@@ -106,19 +105,28 @@ function showDivs(n) {
 }
 
 // ANIMAÇÃO
-var slideIndex = 0;
+let slideIndexNew = 0;
 
-function changeSlide() {
-  var i;
-  var slides = document.getElementsByClassName("slideshow");
+const changeSlide = () => {
+  let i;
+  let slides = document.getElementsByClassName("slideshow");
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
-  slideIndex++;
-  if (slideIndex > slides.length) {
-    slideIndex = 1;
+  slideIndexNew++;
+  if (slideIndexNew > slides.length) {
+    slideIndexNew = 1;
   }
-  slides[slideIndex - 1].style.display = "block";
+  slides[slideIndexNew - 1].style.display = "block";
   setTimeout(changeSlide, 10000);
-}
-changeSlide();
+};
+// changeSlide(); vvv ler abaixo!
+
+// Ao iniciar a funcao 'changeSlide' ao final da mesma para que ela
+// inicie a mudanca de slides do HTML, sempre surgia um erro
+// 'slides[slideIndexNew - 1] is not defined'.
+// Retirar a inicializacao ao final da funcao e ao invés disso
+// a inicializar no 'body' do documento, o erro desaparece
+// e o console da pagina funciona normalmente.
+// Me parece que o JS iniciava mais rapido do que as imagens surgiam,
+// entao o erro aparecia (como se nao houvesse nada para usar na funcao).
