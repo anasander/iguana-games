@@ -6,6 +6,8 @@
 
 <h2>Project Description</h2>
 <p>A fictional website of a company that works selling games (software and hardware). The general design is based in the Nintendo and Microsoft sites, and the colors are based on CAPCOM's brand color (blue and yellow). The logo is a reference to former 'Bits Games' game store in Belo Horizonte, Brazil (now 'Bits and Games'), and the mascot is a reference to former 'Iguana Entertainment' (more recently 'Acclaim Studios Austin', 'Acclaim Studios', that closed down in 2004).</p>
+<p>You can see the repository in action at: <a href='https://iguana-games.vercel.app/'>Iguana Games</a>.</p>
+</br>
 
 ![iguanagames](https://user-images.githubusercontent.com/108422924/231238653-585aba54-6e36-4a18-ada0-8090850dcd30.png)
 
